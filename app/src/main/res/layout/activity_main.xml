@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.devdroid.settingitem.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.devdroid.itemsetting.view.ImeSettingsItemView
+        android:id="@+id/isiv_demo"
+        style="@style/ime_setting_item_style"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-</android.support.constraint.ConstraintLayout>
+        app:settingItemTitle="设置"
+        app:settingItemIcon="@mipmap/icon_ime_setting_dict"/>
+    <ImageView
+        style="@style/Input_Settings_Itme_Divider"/>
+    <com.devdroid.itemsetting.view.RadioSettingsView
+        android:id="@+id/rsv_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemRadioChecked="true"
+        app:itemRadioName="开启"/>
+    <ImageView
+        style="@style/Input_Settings_Itme_Divider"/>
+    <com.devdroid.itemsetting.view.SwitchViewSettingsView
+        android:id="@+id/svsv_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemCheckBoxChecked="true"
+        app:itemCheckBoxName="开启手势"
+        app:itemCheckBoxSummary="使用手势进行操作"/>
+    <ImageView
+        style="@style/Input_Settings_Itme_Divider"/>
+    <com.devdroid.itemsetting.view.SeekBarSettingsView
+        android:id="@+id/sbsv_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemSeekBarProgress="50"
+        app:itemSeekBarMaxProgress="100"
+        app:itemSeekBarName="震动强度"
+        app:itemSeekBarValueStartIcon="@mipmap/keyboard_vibrate_start"
+        app:itemSeekBarValueEndIcon="@mipmap/keyboard_vibrate_end"/>
+    <ImageView
+        style="@style/Input_Settings_Itme_Divider"/>
+</LinearLayout>

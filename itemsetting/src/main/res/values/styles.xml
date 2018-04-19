@@ -1,0 +1,17 @@
+<resources>
+    <!-- 设置条目分割线-->
+    <style name="Input_Settings_Itme_Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:src">@drawable/shape_item_divider_src</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- 输入法设置条目通用属性-->
+    <style name="ime_setting_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+</resources>

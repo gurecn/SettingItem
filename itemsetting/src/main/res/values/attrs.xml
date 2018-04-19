@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchViewSettingsView">
+        <attr name="itemCheckBoxName" format="string" />
+        <attr name="itemCheckBoxSummary" format="string" />
+        <attr name="itemCheckBoxChecked" format="boolean" />
+        <attr name="itemCheckBoxClickable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RadioSettingsView">
+        <attr name="itemRadioName" format="string" />
+        <attr name="itemRadioChecked" format="boolean" />
+        <attr name="itemRadioClickable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SeekBarSettingsView">
+        <attr name="itemSeekBarName" format="string" />
+        <attr name="itemSeekBarValueStartIcon" format="reference" />
+        <attr name="itemSeekBarValueEndIcon" format="reference" />
+        <attr name="itemSeekBarProgress" format="integer" />
+        <attr name="itemSeekBarMaxProgress" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="LableSettingsView">
+        <attr name="itemLableName" format="string" />
+        <attr name="itemLableSummary" format="string" />
+        <attr name="itemLableClickable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ImeSettingsItemView">
+        <attr name="settingItemTitle" format="string" />
+        <attr name="settingItemIcon" format="reference" />
+        <attr name="visibilityEnter" format="integer" />
+    </declare-styleable>
+</resources>
